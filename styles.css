@@ -5,6 +5,14 @@
     --tertiary-color: #111F4D;
 }
 
+/* testing different color theme/-s */
+/* :root {
+    --background-color-1: #000000;
+    --text-color-1: #fff;
+    --shadow-color-1: #b3b3b3;
+    --tertiary-color: #111F4D;
+} */
+
 /* reset spacing */
 *,
 ::before,
@@ -30,13 +38,12 @@ header {
     min-height: 40px;
     /* deducting body tag padding from header for sizing */
     width: calc(100% - (3rem * 2));
-    max-width: 700px;
+    max-width: 740px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: var(--background-color-1);
-    border-bottom: 3px solid var(--text-color-1);
     z-index: 1; /* to cover project tile hover effect */
 }
 
@@ -46,7 +53,7 @@ main {
 
 body {
     position: relative;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .social-icons {
@@ -72,12 +79,10 @@ nav ul {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    /* flex-wrap: wrap; */
     column-gap: 2rem;
 }
 
 nav li {
-    /* font-size: 1.3rem; */
     font-size: 1.7rem;
     font-weight: bold;
     text-align: center;
@@ -123,19 +128,20 @@ a {
 /* center sections and set max-width for readability */
 /* header max-width defined separately above, due to different needs */
 section {
-    margin: 4rem auto;
+    margin: 2rem auto;
     max-width: 700px;
 }
 
 .welcome-section {
-    height: 100vh;
+    display: flex;
+    flex-directioN: column;
+    justify-content: center;
+    height: 50vh;
     min-height: 500px;
-    padding: 10% 0;
     overflow: hidden;
 }
 
 .welcome-section-text {
-    height: 100%;
     min-height: 300px;
     text-align: center;
 }
@@ -148,14 +154,8 @@ h1 {
     font-size: 3rem;
 }
 
-.subtitle {
-    font-size: 1.2rem;
-}
-
 .introduction-text {
-    text-align: justify;
-    font-size: 1rem;
-    margin-top: 2rem;
+    font-size: 1.2rem;
 }
 
 h2 {
@@ -190,12 +190,12 @@ h2 {
     row-gap: 1rem;
 }
 
-/* shrinking a tag that wraps around .project-tile to resize the latter.
+/* .project-tile size determined by .project-container a.
    this way, its hover effect doesn't exceed the navbar's size.
 */
 .projects-container a {
     display: block;
-    width: 95%;
+    width: 100%;
 }
 
 .project-tile h3, .project-tile p, .project-tile button, .project-stack {
@@ -207,9 +207,10 @@ h2 {
     height: 100%;
     width: 100%;
     aspect-ratio: 1.25 / 1;
-    object-fit: cover;
+    object-fit: contain;
     grid-column: 1 / 4;
-    border: 1px solid var(--text-color-1);
+    /* saved white background color for dark website background colors */
+    /* background-color: white; */
 }
 
 .project-info {
@@ -235,9 +236,9 @@ h2 {
     color: var(--background-color-1);
 }
 
-/* applying margin-top to all work experience h3 elements, except the first one */
-.work-experience:not(:first-of-type) h3 {
-    margin-top: 1rem;
+.work-experience {
+    /* margin: 1rem 0; */
+    padding: 1rem 0;
 }
 
 .work-experience ul {
