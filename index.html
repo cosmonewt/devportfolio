@@ -21,27 +21,44 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         > 
+        <script src="./script.js" defer></script>
     </head>
     <body>
-        <header>
-            <nav id="navbar">
-                <ul class="hover-effect">
-                   <li><a class="nav-link" href="#welcome-section">Intro</a></li>
+        <header id="header" class="header">
+            <!-- bars icon (hamburger menu) -->
+            <a href="javascript:void(0)" class="icon-link" id="hamburger-icon" onclick="openResponsiveMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+            </a>
+            <!-- x icon -->
+            <a href="javascript:void(0)" class="icon-link" id="x-icon" onclick="closeResponsiveMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="icon"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            </a>
+            <nav id="topnav" class="topnav">
+                <!-- nav links -->
+                <ul id="nav-links" class="nav-links hover-effect">
+                    <li><a class="nav-link" href="#welcome-section">Intro</a></li>
                     <li><a class="nav-link" href="#skills">Skills</a></li>
                     <li><a class="nav-link" href="#projects">Projects</a></li>
                     <li><a class="nav-link" href="#experience">Experience</a></li>
                 </ul>
+                <ul id="social-icons-list" class="social-icons-list hover-effect">
+                    <li>
+                        <a href="https://www.linkedin.com/in/yangje/" target="_blank">
+                          <i class="fab fa-linkedin-in" alt="linkedin social media icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/cosmonewt" id="profile-link" target="_blank">
+                          <i class="fab fa-github" alt="github social media icon"></i>
+                        </a>
+                    </li>
+                </ul>
             </nav>
-            <div class="social-icons hover-effect">
-                <a href="https://www.linkedin.com/in/yangje/" target="_blank">
-                  <i class="fab fa-linkedin-in" alt="linkedin social media icon"></i>
-                </a>
-                <a href="https://github.com/je-repo" id="profile-link" target="_blank">
-                  <i class="fab fa-github" alt="github social media icon"></i>
-                </a>
         </header>
-        <div>
-        <main>
+        <main id="main" class="main">
+            <div class="switch-theme">
+                
+            </div>
             <section id="welcome-section" class="welcome-section">
                 <div class="welcome-section-text">
                     <h1 class="text-center">
@@ -57,6 +74,7 @@
                         Welcome to my portfolio page.
                     </p>
                 </div>
+                <div class="scroll"></div>
             </section>
             <section id="skills" class="skills-section">
                 <h2>Skills</h2>
@@ -95,7 +113,7 @@
                 <h2>Projects</h2>
                     <div class="projects-container">
                         <!-- fitnessapp tile -->
-                        <a class="project-link" href="https://github.com/je-repo/fitnessapp" target="_blank">    
+                        <a class="project-link" href="https://github.com/cosmonewt/fitnessapp" target="_blank">    
                             <div class="project-tile"> 
                                 <img class="project-img" src="https://camo.githubusercontent.com/1ee71f466c2fbaffd96bc056ce071d533661cf4e07144f7867014464e382d0be/68747470733a2f2f692e696d6775722e636f6d2f4f766b58746a362e706e67" loading="lazy" alt="fitnessapp interface picture">
                                 <div class="project-info">
@@ -129,7 +147,7 @@
                         </a>
 
                         <!-- newssite tile -->
-                        <a class="project-link" href="https://github.com/je-repo/newssite" target="_blank">    
+                        <a class="project-link" href="https://github.com/cosmonewt/newssite" target="_blank">    
                             <div class="project-tile"> 
                                 <img class="project-img" src="./assets/images/newssite_homepage_thumbnail.png" loading="lazy" alt="newssite homepage screenshot">
                                 <div class="project-info">
@@ -163,7 +181,7 @@
                         </a>
 
                         <!-- other projects tile -->
-                        <a class="project-link" href="https://github.com/je-repo" target="_blank">    
+                        <a class="project-link" href="https://github.com/cosmonewt" target="_blank">    
                             <div class="project-tile"> 
                                 <img class="project-img" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg?width=300" loading="lazy" alt="work in progress picture">
                                 <div class="project-info">

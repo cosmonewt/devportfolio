@@ -5,14 +5,6 @@
     --tertiary-color: #111F4D;
 }
 
-/* testing different color theme/-s */
-/* :root {
-    --background-color-1: #000000;
-    --text-color-1: #fff;
-    --shadow-color-1: #b3b3b3;
-    --tertiary-color: #111F4D;
-} */
-
 /* reset spacing */
 *,
 ::before,
@@ -21,89 +13,137 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     font-family: "DM Sans", sans-serif;
     font-size: 15px;
     background-color: var(--background-color-1);
     color: var(--text-color-1);
 }
-
-header {
+.header {
     position: fixed;
     top: 0;
     left: 50%; /* center horizontally */ 
     transform: translateX(-50%); /* center horizontally */
     height: 10vh;
     min-height: 40px;
-    /* deducting body tag padding from header for sizing */
-    width: calc(100% - (3rem * 2));
-    max-width: 740px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 1rem;
     background-color: var(--background-color-1);
     z-index: 1; /* to cover project tile hover effect */
 }
-
-main {
-    margin-top: 5vh;
-}
-
 body {
     position: relative;
     padding: 1rem;
 }
-
-.social-icons {
-    font-size: 2rem;
+.icon-link {
+    display: none;
+    text-align: right;
+}
+.icon {
+    height: 2rem;
+    width: 2rem;
+}
+.topnav {
+    width: inherit;
+    min-height: 40px;
+    height: 50px;
+    position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    min-width: 85px;
-    width: 20%;
 }
-
-nav {
-    min-width: 280px;
-    width: 75%;
-}
-
-nav ul {
+.nav-links {
     list-style: none;
-    height: 100%;
-    width: 100%;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
     column-gap: 2rem;
+    
 }
-
 nav li {
     font-size: 1.7rem;
     font-weight: bold;
     text-align: center;
 }
+/* Style the hamburger menu */
+.topnav a.icon {
+    display: none;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+}
+.social-icons-list {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .7rem;
+}
 
-/* --------------- hover effects --------------- */
+
+/* --------------- switch theme button --------------- */
+.switch-theme {
+    height: 40px;
+    width: 40px;
+    background-color: brown;
+    position: fixed;
+    top: calc(50vh - 20px);
+    right: 0;
+    z-index: 1;
+}
+.switch-theme:hover {
+    transform: scale(1.3);
+}
+
+/* --------------- scroll down symbol & animation --------------- */
+
+.scroll {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #333;
+	border-radius: 50%;
+	position: absolute;
+    left: calc(50% - 30px);
+    bottom: 5%;
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 15px;
+		left: 18px;
+		width: 18px;
+		height: 18px;
+		border-left: 2px solid #333;
+  	border-bottom: 2px solid #333;
+		transform: rotate(-45deg);
+	}
+}
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+/* --------------- hover effects (links & project tiles) --------------- */
 
 /* nav links hover effect */
 a {
     text-decoration: none;
     color: var(--text-color-1);
 }
-
 .hover-effect a {
     transition: .3s;
 }
-
 .hover-effect a:hover {
     text-shadow: -2px 2px 3px var(--shadow-color-1);
 }
-
 /* project tiles hover effect */
 .project-tile {
     padding: 1rem;
@@ -113,7 +153,6 @@ a {
     border-radius: 10px;
     transition: .3s;
 }
-
 .project-tile:hover {
     box-shadow: -2px 2px 10px var(--shadow-color-1);
     transform: scale(1.02);
@@ -124,14 +163,12 @@ a {
 .project-link {
     cursor: pointer;
 }
-
 /* center sections and set max-width for readability */
 /* header max-width defined separately above, due to different needs */
 section {
     margin: 5rem auto;
     max-width: 700px;
 }
-
 .welcome-section {
     display: flex;
     flex-directioN: column;
@@ -140,29 +177,24 @@ section {
     height: calc(100vh - 5vh); 
     min-height: 500px;
     overflow: hidden;
+    position: relative;
 }
-
 .welcome-section-text {
     min-height: 300px;
     text-align: center;
 }
-
 .text-center {
     text-align: center;
 }
-
 h1 {
     font-size: 3rem;
 }
-
 .introduction-text {
     font-size: 1.2rem;
 }
-
 h2 {
     margin: 0.5rem 0;
 }
-
 .skills-container {
     margin: 2rem 0;
     /* display: grid;
@@ -173,16 +205,13 @@ h2 {
     justify-content: space-around;
     gap: 1rem;
 }
-
 .skill-tile {
     text-align: center;
 
 }
-
 .skills-container i {
     font-size: 4.5rem;
 }
-
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -190,7 +219,6 @@ h2 {
     align-items: center;
     row-gap: 1rem;
 }
-
 /* .project-tile size determined by .project-container a.
    this way, its hover effect doesn't exceed the navbar's size.
 */
@@ -198,11 +226,9 @@ h2 {
     display: block;
     width: 100%;
 }
-
 .project-tile h3, .project-tile p, .project-tile button, .project-stack {
     margin: 0.5rem 0;
 }
-
 .project-tile img {
     display: block;
     height: 100%;
@@ -210,24 +236,21 @@ h2 {
     aspect-ratio: 1.25 / 1;
     object-fit: contain;
     grid-column: 1 / 4;
-    /* saved white background color for dark website background colors */
+    /* saved white background color for dark background colors */
     /* background-color: white; */
 }
-
 .project-info {
     grid-column: 4 / -1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
 .project-stack {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
     flex-wrap: wrap;
 }
-
 .project-tech {
     padding: 0.2rem 1rem;
     font-weight: bold;
@@ -236,77 +259,86 @@ h2 {
     background-color: var(--text-color-1);
     color: var(--background-color-1);
 }
-
 .work-experience {
     padding: 1rem 0;
 }
-
 .work-experience ul {
     padding-left: 1rem;
 }
 
-@media (max-width: 480px) {
+/* General responsive formatting */
+@media screen and (max-width: 768px) {
     html {
         font-size: 13px;
     }
-
-    header {
+    .header {
+        height: 56px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 1rem;
     }
-
-    nav ul {
-        width: 100%;
-    }
-
-    .social-icons {
-        width: 40%;
-    }
-
     .welcome-section {
         height: 50vh;
     }
-
     .skills-container {
         justify-content: start;
     }
-
     .project-tile {
         display: grid;
         grid-template-columns: 1fr;
     }
-
     .project-title, .project-text {
         text-align: center;
     }
-
     .project-stack {
         justify-content: center;
     }
-
+    /* switch theme */
+    /* .switch-theme {
+        bottom: 0;
+        top: auto;
+        left: calc(50vw - 20px);
+        } */
+    /* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+    .nav-links li {
+        text-align: left;
+        width: 100%;
+        font-size: 2rem;
+        height: 40px;
+    }
+    .topnav {
+        top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-links {
+        flex-direction: column;
+    }
+    .icon-link {
+        display: block;
+    }
+    .social-icons {
+        /* position social icons below nav links */
+        position: fixed;
+        bottom: 0;
+        font-size: 2.5rem;
+        /* space out social icons horizontally */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        min-width: 85px; 
+        width: 20%;
+    }
+    .responsive-menu-margin {
+        margin-top: 240px;
+    }
+    .responsive-header-height {
+        height: 240px;
+    }
+    .hide {
+        position: fixed;
+        right: -100%;
+    }
 }
 
-/* test */
-/* #welcome-section {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-} */
-
-
-/* test end */
