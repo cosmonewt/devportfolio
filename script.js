@@ -20,8 +20,8 @@ const updateNavbar = (e) => {
 };
 
 const openResponsiveMenu = () => {
-  navbar.classList.remove("hide");
-  xIcon.classList.remove("hide");
+  navbar.classList.add("show");
+  xIcon.classList.add("show");
   hamburgerIcon.classList.add("hide");
   header.classList.add("responsive-header-height");
   main.classList.add("responsive-menu-margin");
@@ -29,8 +29,8 @@ const openResponsiveMenu = () => {
 };
 
 const closeResponsiveMenu = () => {
-  navbar.classList.add("hide");
-  xIcon.classList.add("hide");
+  navbar.classList.remove("show");
+  xIcon.classList.remove("show");
   hamburgerIcon.classList.remove("hide");
   header.classList.remove("responsive-header-height");
   main.classList.remove("responsive-menu-margin");
