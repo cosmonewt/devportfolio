@@ -174,7 +174,8 @@ section {
     flex-directioN: column;
     justify-content: center;
     /* viewport height - (header height - 5 vh) to hide bottom elements */
-    height: calc(100vh - 5vh); 
+    /* height: calc(100vh - 5vh);  */
+    height: calc(100dvh - 5dvh); 
     min-height: 500px;
     overflow: hidden;
     position: relative;
@@ -266,6 +267,60 @@ h2 {
     padding-left: 1rem;
 }
 
+/* Contact form */
+/* vertically align labels and input forms */
+.contact-form div * {
+    display: block;
+}
+
+/* center form fields */
+.contact-form input,
+.contact-form textarea,
+.contact-form label,
+.contact-form button {
+    margin: 0 auto;
+}
+
+/* add row space between direct children of contact form */
+.contact-form > * {
+    margin-top: 1rem;
+}
+
+/* 
+    manually adding button top margin, 
+    as it is overridden by previous specific selector above
+*/
+.contact-form button {
+    margin-top: 1rem;
+}
+
+/* TODO: style button */
+
+.contact-form input,
+.contact-form textarea,
+.contact-form label {
+    width: 80%;
+}
+
+.contact-form input {
+    height: 2rem;
+}
+
+.contact-form textarea {
+    height: 10rem;
+}
+
+/* center form submit button */
+.contact-form button,
+.contact-form label {
+    display: block;
+}
+
+.contact-form button {
+    height: 2.5rem;
+    width: 10rem;
+}
+
 /* General responsive formatting */
 @media screen and (max-width: 768px) {
     html {
@@ -277,9 +332,9 @@ h2 {
         flex-direction: column;
         padding: 1rem;
     }
-    .welcome-section {
-        height: 50vh;
-    }
+    /* .welcome-section {
+        height: calc(10dvh - 5dhv);
+    } */
     .skills-container {
         justify-content: start;
     }
