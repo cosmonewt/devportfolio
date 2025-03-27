@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./assets/images/letter-j-grey.png" type="image/icon type">
         <title>Je Yang</title>
         <link 
             rel="stylesheet" 
@@ -17,286 +18,356 @@
             type='text/css' 
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
         >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link 
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         > 
         <script src="./script.js" defer></script>
     </head>
     <body>
-        <header id="header" class="header">
-            <!-- bars icon (hamburger menu) -->
-            <a href="javascript:void(0)" class="icon-link hamburger-icon" id="hamburger-icon" onclick="openResponsiveMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
-            </a>
-            <!-- x icon -->
-            <a href="javascript:void(0)" class="icon-link x-icon" id="x-icon" onclick="closeResponsiveMenu()">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="icon"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
-            </a>
-            <nav id="topnav" class="topnav">
-                <!-- nav links -->
-                <ul id="nav-links" class="nav-links hover-effect">
-                    <li><a class="nav-link" href="#welcome-section">Intro</a></li>
-                    <li><a class="nav-link" href="#skills">Skills</a></li>
-                    <li><a class="nav-link" href="#projects">Projects</a></li>
-                    <li><a class="nav-link" href="#experience">Experience</a></li>
-                </ul>
-                <ul id="social-icons-list" class="social-icons-list hover-effect">
+        <div class="column-wrapper">
+            <header class="left-column">
+                <div class="left-column-top">
+                    <div class="title">
+                        <h1 class="full-name">
+                            Je Yang
+                        </h1>
+                        <h3 class="title">
+                            Full Stack Developer with Business-/ Sales background
+                        </h3>
+                        <p>
+                            Slogan/Executive Summary
+                        </p>
+                    </div>
+                    <nav class="nav-links">
+                        <li><a class="nav-link" href="#welcome-section">Intro</a></li>
+                        <li><a class="nav-link" href="#skills">Skills</a></li>
+                        <li><a class="nav-link" href="#projects">Projects</a></li>
+                        <li><a class="nav-link" href="#experience">Experience</a></li>
+                    </nav>
+                </div>
+                <ul id="social-icons" class="social-icons">
                     <li>
                         <a href="https://www.linkedin.com/in/yangje/" target="_blank">
-                          <i class="fab fa-linkedin-in" alt="linkedin social media icon"></i>
+                        <i class="fab fa-linkedin-in" alt="linkedin social media icon"></i>
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/cosmonewt" id="profile-link" target="_blank">
-                          <i class="fab fa-github" alt="github social media icon"></i>
+                        <i class="fab fa-github" alt="github social media icon"></i>
                         </a>
                     </li>
                 </ul>
-            </nav>
-        </header>
-        <main id="main" class="main">
-            <div class="switch-theme">
-                
-            </div>
-            <section id="welcome-section" class="welcome-section">
-                <div class="welcome-section-text">
-                    <h1 class="text-center">
-                        Hi &#x1F44B;
-                        <br>
-                        I'm Je Yang.
-                    </h1>
-                    <br>
-                    <p class="introduction-text text-center">
-                        A full stack developer with a business-/ sales background in London, United Kingdom.
-                        <br>
-                        <br>
-                        Welcome to my portfolio page.
-                    </p>
-                </div>
-                <div class="scroll"></div>
-            </section>
-            <section id="skills" class="skills-section">
-                <h2>Skills</h2>
-                <div class="skills-container">
-                    <div class="skill-tile">
-                        <i class="devicon-python-plain" alt="python icon"></i>
-                        <p class="text-center">Python</p>
+            </header>
+            <main id="main" class="main right-column">
+                <!-- <section id="introduction" class="introduction-section">
+                    <div class="introduction-section-text">
+                        
                     </div>
-                    <div class="skill-tile">
-                        <i class="devicon-javascript-plain" alt="javascript icon"></i>
-                        <p class="text-center">JavaScript</p>
+                </section>
+                <hr> -->
+                <section id="skills" class="skills-section">
+                    <h2>Skills</h2>
+                    <div class="skills-wrapper">
+                        <div class="skill-tile">
+
+                            <i class="devicon-python-plain"></i>
+            
+                            <p class="text-center">Python</p>
+                        </div>
+                        <div class="skill-tile">
+
+                            <i class="devicon-javascript-plain"></i>
+            
+                            <p class="text-center">JavaScript</p>
+                        </div>
+                        <div class="skill-tile">
+
+                            <i class="devicon-typescript-plain"></i>
+
+                            <p class="text-center">TypeScript</p>
+                        </div>
+                        <div class="skill-tile">
+
+                            <i class="devicon-html5-plain-wordmark"></i>
+            
+                            <p class="text-center">HTML</p>
+                        </div>
+                        <div class="skill-tile">
+
+                            <i class="devicon-css3-plain-wordmark"></i>
+            
+                            <p class="text-center">CSS</p>
+                        </div>
+                        <div class="skill-tile">
+
+                            <i class="devicon-django-plain-wordmark"></i>
+            
+                            <p class="text-center">Django</p>
+                        </div>
+                        <div class="skill-tile">
+
+                            <i class="devicon-flask-original-wordmark"></i>
+            
+                            <p class="text-center">Flask</p>
+                        </div>
+                        <div class="skill-tile">
+                            
+                            <i class="devicon-postgresql-plain"></i>
+            
+                            <p class="text-center">SQL</p>
+                        </div>
+                        <div class="skill-tile">
+                            
+                            <i class="devicon-bash-plain"></i>
+            
+                            <p class="text-center">Bash Shell</p>
+                        </div>
                     </div>
-                    <div class="skill-tile">
-                        <i class="devicon-html5-plain" alt="html5 icon"></i>
-                        <p class="text-center">HTML</p>
-                    </div>
-                    <div class="skill-tile">
-                        <i class="devicon-css3-plain" alt="css3 icon"></i>
-                        <p class="text-center">CSS</p>
-                    </div>
-                    <div class="skill-tile">
-                        <i class="devicon-django-plain" alt="django framework icon"></i>
-                        <p class="text-center">Django</p>
-                    </div>
-                    <div class="skill-tile">
-                        <i class="devicon-flask-original" alt="flask framework icon"></i>
-                        <p class="text-center">Flask</p>
-                    </div>
-                    <div class="skill-tile">
-                        <i class="devicon-sqlite-plain" alt="sqlite3 icon"></i>
-                        <p class="text-center">SQLite3</p>
-                    </div>
-                </div>
-            </section>
-            <section id="projects" class="projects-section">
-                <h2>Projects</h2>
-                    <div class="projects-container">
-                        <!-- fitnessapp tile -->
-                        <a class="project-link" href="https://github.com/cosmonewt/fitnessapp" target="_blank">    
-                            <div class="project-tile"> 
-                                <img class="project-img" src="https://camo.githubusercontent.com/1ee71f466c2fbaffd96bc056ce071d533661cf4e07144f7867014464e382d0be/68747470733a2f2f692e696d6775722e636f6d2f4f766b58746a362e706e67" loading="lazy" alt="fitnessapp interface picture">
+                </section>
+                <hr>
+                <section id="projects" class="projects-section">
+                    <h2>Selected Projects</h2>
+                        <div class="projects-wrapper">
+                            <!-- fitnessapp card -->
+                            <!-- <a class="project-link" href="https://github.com/cosmonewt/fitnessapp" target="_blank">     -->
+                                <div class="project-card"> 
+                                    <div class="project-info">
+
+                                            <h3 class="project-title"><a class="project-link" href="https://github.com/cosmonewt/fitnessapp" target="_blank">fitnessapp</a></h3>
+
+                                            <p class="project-text">
+                                                <a class="project-link" href="https://github.com/cosmonewt/fitnessapp" target="_blank">A fitness webapp to track and visualise weightlifting habits and -progression.</a>
+                                            </p>
+
+                                            <div class="project-tech-stack">
+                                                <div class="project-tech">
+                                                    <a class="project-link" href="https://github.com/cosmonewt/fitnessapp" target="_blank">
+                                                        Python
+                                                    </a>
+                                                </div>
+                                                <div class="project-tech">
+                                                    <a class="project-link" href="https://github.com/cosmonewt/fitnessapp" target="_blank">
+                                                        Flask
+                                                    </a>
+                                                </div>
+                                                <div class="project-tech">
+                                                    <a class="project-link" href="https://github.com/cosmonewt/fitnessapp" target="_blank">
+                                                        SQLite3
+                                                    </a>
+                                                </div>
+                                                <div class="project-tech">
+                                                    <a class="project-link" href="https://github.com/cosmonewt/fitnessapp" target="_blank">
+                                                        JavaScript
+                                                    </a>
+                                                </div>
+                                                <div class="project-tech">
+                                                    <a class="project-link" href="https://github.com/cosmonewt/fitnessapp" target="_blank">
+                                                        HTML
+                                                    </a>
+                                                </div>
+                                                <div class="project-tech">
+                                                    <a class="project-link" href="https://github.com/cosmonewt/fitnessapp" target="_blank">
+                                                        CSS
+                                                    </a>
+                                                </div>
+                                                <div class="project-tech">
+                                                    <a class="project-link" href="https://github.com/cosmonewt/fitnessapp" target="_blank">
+                                                        Bootstrap
+                                                    </a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <a class="project-link" href="https://github.com/cosmonewt/fitnessapp" target="_blank">
+                                        <img class="project-image" src="https://camo.githubusercontent.com/1ee71f466c2fbaffd96bc056ce071d533661cf4e07144f7867014464e382d0be/68747470733a2f2f692e696d6775722e636f6d2f4f766b58746a362e706e67" loading="lazy" alt="fitnessapp interface picture">
+                                    </a>
+                                </div>
+                            <!-- </a> -->
+
+                            <!-- newssite card -->
+                            <div class="project-card"> 
                                 <div class="project-info">
-                                    <h3 class="project-title">fitnessapp</h3>
-                                    <p class="project-text">A fitness webapp to track and visualise weightlifting habits and -progression.</p>
-                                    <div class="project-stack">
+                                    <h3 class="project-title">
+                                        <a class="project-link" href="https://github.com/cosmonewt/newssite" target="_blank">newssite</a>
+                                    </h3>
+                                    <p class="project-text">
+                                        <a class="project-link" href="https://github.com/cosmonewt/newssite" target="_blank">A news website using a Django backend and React frontend with free-to-use articles.</a>
+                                    </p>
+                                    <div class="project-tech-stack">
                                         <div class="project-tech">
-                                            Python
+                                            <a class="project-link" href="https://github.com/cosmonewt/newssite" target="_blank">    
+                                                Python
+                                            </a>
                                         </div>
                                         <div class="project-tech">
-                                            Flask
+                                            <a class="project-link" href="https://github.com/cosmonewt/newssite" target="_blank">    
+                                                JavaScript
+                                            </a>
                                         </div>
                                         <div class="project-tech">
-                                            SQLite3
+                                            <a class="project-link" href="https://github.com/cosmonewt/newssite" target="_blank">    
+                                                HTML
+                                            </a>
                                         </div>
                                         <div class="project-tech">
-                                            JavaScript
+                                            <a class="project-link" href="https://github.com/cosmonewt/newssite" target="_blank">    
+                                                CSS
+                                            </a>
                                         </div>
                                         <div class="project-tech">
-                                            HTML
+                                            <a class="project-link" href="https://github.com/cosmonewt/newssite" target="_blank">    
+                                                React
+                                            </a>
                                         </div>
                                         <div class="project-tech">
-                                            CSS
+                                            <a class="project-link" href="https://github.com/cosmonewt/newssite" target="_blank">    
+                                                Django
+                                            </a>
                                         </div>
                                         <div class="project-tech">
-                                            Bootstrap
+                                            <a class="project-link" href="https://github.com/cosmonewt/newssite" target="_blank">    
+                                                Django Rest Framework
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
+                                <a class="project-link" href="https://github.com/cosmonewt/newssite" target="_blank">
+                                    <img class="project-image" src="./assets/images/newssite_homepage_thumbnail.png" loading="lazy" alt="newssite homepage screenshot">
+                                </a>
                             </div>
-                        </a>
 
-                        <!-- newssite tile -->
-                        <a class="project-link" href="https://github.com/cosmonewt/newssite" target="_blank">    
-                            <div class="project-tile"> 
-                                <img class="project-img" src="./assets/images/newssite_homepage_thumbnail.png" loading="lazy" alt="newssite homepage screenshot">
-                                <div class="project-info">
-                                    <h3 class="project-title">newssite</h3>
-                                    <p class="project-text">A news website using a Django backend and React frontend with free-to-use articles.</p>
-                                    <div class="project-stack">
-                                        <div class="project-tech">
-                                            Python
-                                        </div>
-                                        <div class="project-tech">
-                                            JavaScript
-                                        </div>
-                                        <div class="project-tech">
-                                            HTML
-                                        </div>
-                                        <div class="project-tech">
-                                            CSS
-                                        </div>
-                                        <div class="project-tech">
-                                            React
-                                        </div>
-                                        <div class="project-tech">
-                                            Django
-                                        </div>
-                                        <div class="project-tech">
-                                            Django Rest Framework
+                            <!-- other projects card -->
+                            <a class="project-link" href="https://github.com/cosmonewt" target="_blank">    
+                                <div class="project-card"> 
+                                    <div class="project-info">
+                                        <h3 class="project-title">
+                                            <a class="project-link" href="https://github.com/cosmonewt" target="_blank">Other Projects</a>
+                                        </h3>
+                                        <p class="project-text">
+                                            <a class="project-link" href="https://github.com/cosmonewt" target="_blank">Includes repos for Harvard cs50x, -cs50w, freeCodeCamp, freeCodeCamp open source contribution and personal projects.</a>
+                                        </p>
+                                        <div class="project-tech-stack">
+                                            <!-- <div class="project-tech">
+                                                
+                                            </div>
+                                            <div class="project-tech">
+                                                
+                                            </div>
+                                            <div class="project-tech">
+                                                
+                                            </div>
+                                            <div class="project-tech">
+                                                
+                                            </div>
+                                            <div class="project-tech">
+                                                
+                                            </div>
+                                            <div class="project-tech">
+                                                
+                                            </div>
+                                            <div class="project-tech">
+                                                
+                                            </div> -->
                                         </div>
                                     </div>
+                                    <a class="project-link" href="https://github.com/cosmonewt" target="_blank">
+                                        <img class="project-image white-background" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg?width=300" loading="lazy" alt="work in progress picture">
+                                    </a>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
+                </section>
+                <hr>
+                <section id="experience" class="experience-section">
+                    <h2>Professional Experience</h2>
+                    <div id="work-experience-wrapper">
+                        <div class="experience-card">
+                            <h3>EMEA Sales Development Representative</h3>
+                            <h4>Immuta, London, UK	2021 - 2022</h4>
+                            <ul>
+                                <li>
+                                    Consistently overachieved monthly quota up to 188% via steady activities across email, phone, social media and internal collaboration (solution engineering, partnerships, field marketing, sales, etc.).
+                                </li>
+                                <li>
+                                    Used suite of sales platforms (Salesforce, Dialpad, LeadIQ, etc.) for prospecting.
+                                </li>
+                                <li>
+                                    Represented company at industry events in Germany, Sweden, and UK.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="experience-card">
+                            <h3>German-Speaking Sales Development Representative</h3>
+                            <h4>Confluent, London, UK	Nov 2020 - 2021</h4>
+                            <ul>
+                                <li>
+                                    Consistently overachieved monthly quota up to 125%.
+                                </li>
+                                <li>
+                                    Won team cold calling challenge by making 50 calls a day on top of existing activities over a week.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="experience-card">
+                            <h3>German-Speaking Business Development Representative</h3>
+                            <h4>Invision App, London, UK	2019 - 2020</h4>
+                            <ul>
+                                <li>
+                                    Consistently overachieved monthly quota up to 130%.
+                                </li>
+                                <li>
+                                    Used Looker (SQL) to drive go-to-market campaigns and unlock untouched customer segments.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <h2>Education</h2>
+                    <div id="education-wrapper" class="education-wrapper">
+                        <p>
+                            University of Nottingham - MSc Entrepreneurship, Innovation and Management
+                            <br>
+                            1st Class
+                        </p>
+                        <p>
+                            Glasgow Caledonian University - BA (Hons) Business with Specialism in Enterprise
+                            <br>
+                            Upper 2:1
+                        </p>
+                        <p>
+                            California State University Long Beach - BA (Hons) Business (Overseas Exchange)
+                            <br>GPA 3.4
+                        </p>
+                    </div>
+                </section>
+                <hr>
+                <section id="contact-form-section" class="contact-form-section">
+                    <h2>Contact Form</h2>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="form">
 
-                        <!-- other projects tile -->
-                        <a class="project-link" href="https://github.com/cosmonewt" target="_blank">    
-                            <div class="project-tile"> 
-                                <img class="project-img" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg?width=300" loading="lazy" alt="work in progress picture">
-                                <div class="project-info">
-                                    <h3 class="project-title">Other Projects</h3>
-                                    <p class="project-text">Includes repos for Harvard cs50x, -cs50w, freeCodeCamp, freeCodeCamp open source contribution and personal projects.</p>
-                                    <div class="project-stack">
-                                        <!-- <div class="project-tech">
-                                            
-                                        </div>
-                                        <div class="project-tech">
-                                            
-                                        </div>
-                                        <div class="project-tech">
-                                            
-                                        </div>
-                                        <div class="project-tech">
-                                            
-                                        </div>
-                                        <div class="project-tech">
-                                            
-                                        </div>
-                                        <div class="project-tech">
-                                            
-                                        </div>
-                                        <div class="project-tech">
-                                            
-                                        </div> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-            </section>
-            <section id="experience" class="experience-section">
-                <h2>Professional Experience</h2>
-                <div id="work-experience-container">
-                    <div class="work-experience">
-                        <h3>EMEA Sales Development Representative</h3>
-                        <h4>Immuta, London, UK	2021 - 2022</h4>
-                        <ul>
-                            <li>
-                                Consistently overachieved monthly quota up to 188% via steady activities across email, phone, social media and internal collaboration (solution engineering, partnerships, field marketing, sales, etc.)
-                            </li>
-                            <li>
-                                Used suite of sales platforms (Salesforce, Dialpad, LeadIQ, etc.) for prospecting
-                            </li>
-                            <li>
-                                Represented company at industry events in Germany, Sweden, and UK
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="work-experience">
-                        <h3>German-Speaking Sales Development Representative</h3>
-                        <h4>Confluent, London, UK	Nov 2020 - 2021</h4>
-                        <ul>
-                            <li>
-                                Consistently overachieved monthly quota up to 125%
-                            </li>
-                            <li>
-                                Won team cold calling challenge by making 50 calls a day on top of existing activities over a week
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="work-experience">
-                        <h3>German-Speaking Business Development Representative</h3>
-                        <h4>Invision App, London, UK	2019 - 2020</h4>
-                        <ul>
-                            <li>
-                                Consistently overachieved monthly quota up to 130%
-                            </li>
-                            <li>
-                                Used Looker (SQL) to drive go-to-market campaigns and unlock untouched customer segments
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <h2>Education</h2>
-                <div id="education-container">
-                    <p>
-                        University of Nottingham - MSc Entrepreneurship, Innovation and Management, 1st Class
-                        <br>
-                        Glasgow Caledonian University - BA (Hons) Business with Specialism in Enterprise, Upper 2:1
-                        <br>
-                        California State University Long Beach - BA (Hons) Business (Overseas Exchange), GPA 3.4
-                    </p>
-                </div>
-            </section>
-            <section id="contact-form-section" class="contact-form-section">
-                <h2>Contact Form</h2>
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="form">
+                        <input type="hidden" name="access_key" value="8ddb7901-4367-43ea-b570-db0164f85c6d">
+                        <div class="field-wrapper">
+                            <label for="name">Name: </label>
+                            <input type="text" name="name" id="name" placeholder="First- and surname (required)" required>
+                        </div>
+                        <div class="field-wrapper">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" placeholder="email@example.com (required)" required>
+                        </div>
+                        <div class="field-wrapper">
+                            <label for="message">Message: </label>
+                            <textarea name="message" id="message" placeholder="Enter your message here" required></textarea>
+                        </div>
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <!-- web3forms hcatpcha div -->
+                        <div class="h-captcha" data-captcha="true"></div>
+                        <button type="submit" class="button">Submit Form</button>
 
-                    <input type="hidden" name="access_key" value="8ddb7901-4367-43ea-b570-db0164f85c6d">
-                    <!-- <input type="hidden" name="subject" value="Contact Form Submission"> -->
-                    
-                    <!-- <div>
-                        <label for="subject">Title: </label>
-                        <input type="text" name="subject" id="subject" placeholder="Enter the message title here (required)" required>
-                    </div> -->
-                    <div>
-                        <label for="name">Name: </label>
-                        <input type="text" name="name" id="name" placeholder="First- and surname (required)" required>
-                    </div>
-                    <div>
-                        <label for="email">Email: </label>
-                        <input type="email" name="email" id="email" placeholder="email@example.com (required)" required>
-                    </div>
-                    <div>
-                        <label for="message">Message: </label>
-                        <textarea name="message" id="message" placeholder="Enter your message here" required></textarea>
-                    </div>
-                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                    <button type="submit">Submit Form</button>
-                
-                </form>
-            </section>
-        </main>
+                    </form>
+                </section>
+            </main>
+        </div>
     </body>
 </html>
