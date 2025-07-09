@@ -164,6 +164,14 @@ hr {
     border-radius: 5px;
 }
 
+.contain-img {
+    object-fit: contain;
+}
+
+.white-bg {
+    background-color: #fff
+}
+
 .project-tech-stack {
     margin-top: .5rem;
     display: flex;
