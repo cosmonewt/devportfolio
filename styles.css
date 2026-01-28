@@ -172,6 +172,10 @@ hr {
     background-color: #fff
 }
 
+.logo-padding {
+    padding: 10px;
+}
+
 .project-tech-stack {
     margin-top: .5rem;
     display: flex;
