@@ -187,8 +187,8 @@ hr {
     color: var(--background-color);
     background-color: var(--text-color-2);
     font-size: .9rem;
-    border-radius: 15px;
-    padding: 0.2rem .7rem;
+    border-radius: 5px;
+    padding: 0.05rem .7rem;
 }
 
 .experience-card {
